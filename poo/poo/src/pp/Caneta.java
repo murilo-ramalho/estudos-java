@@ -2,11 +2,11 @@ package pp;
 
 public class Caneta {
         //atributos - "o que tem"
-    String modelo;
-    String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    private String modelo;
+    private String cor;
+    private float ponta;
+    protected int carga;
+     protected boolean tampada;
 
         //metodos - "o que faz"
     void status(){
@@ -16,17 +16,17 @@ public class Caneta {
         System.out.println("ponta: "+this.ponta);
         System.out.println("carga: "+this.carga);
     }
-    void rabiscar(){
+    public void rabiscar(){
         if (this.tampada == true){
             System.out.println("não dá, está tampada");
         } else {
             System.out.println("rasbiscando");
         }
     }
-    void tampar(){
+    private void tampar(){
         this.tampada = true;
     }
-    void destampar(){
+    private void destampar(){
         this.tampada = false;
     }
 
