@@ -33,9 +33,8 @@ public class Main {
 
                 conta.abrirConta(tipo, nome);
             }else if (opcao == 2) {
-                if (conta.getSaldo() > 0) {
-                    System.out.println("você ainda tem saldo!");
-                } else {
+                if (conta.getSaldo() > 0) System.out.println("você ainda tem saldo!");
+                else {
                     conta.fecharConta();
                     System.out.println("conta fechada");
                 }
@@ -47,13 +46,10 @@ public class Main {
                     conta.depositar(deposito);
 
                     System.out.println("seu saldo é de: R$" + conta.getSaldo());
-                } else {
-                    System.out.println("sua conta ainda não foi aberta!");
-                }
+                } else System.out.println("sua conta ainda não foi aberta!");
             } else if (opcao == 4) {
-                if (conta.getSaldo()<=0 && conta.isStatus() == true){
-                    System.out.println("Você não tem saldo");
-                } else {
+                if (conta.getSaldo()<=0 && conta.isStatus() == true) System.out.println("Você não tem saldo");
+                else {
                     System.out.println("digite o quanto deseja sacar: R$");
                     Scanner A = new Scanner(System.in);
                     float saque = A.nextFloat();
@@ -69,9 +65,8 @@ public class Main {
             } else if (opcao == 6) {
                 if (conta.isStatus()) System.out.println("sua conta está aberta");
                 else System.out.println("sua conta não está aberta");
-            } else if (opcao == 7) {
-                c = false;
-            } else System.out.println("descupe, essa opção não existe");
+            } else if (opcao == 7) c = false;
+            else System.out.println("descupe, essa opção não existe");
         }
     }
 }

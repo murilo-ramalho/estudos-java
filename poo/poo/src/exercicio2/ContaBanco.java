@@ -13,35 +13,31 @@ public class ContaBanco {
 
 
     public ContaBanco() {
-        this.numConta = numConta;
-        this.tipo = tipo;
-        this.dono = dono;
-        this.saldo = saldo;
-        this.status = status;
+
     }
 
     public void abrirConta(String tipo, String dono){
-        this.tipo = tipo;
-        this.dono = dono;
-        this.numConta++;
-        if (tipo=="cc") this.saldo = 50.00f;
-        else this.saldo = 150.00f;
-        this.status = true;
+        setTipo(tipo);
+        setDono(dono);
+        setNumConta(+1);
+        if (tipo=="cc") setSaldo(50f);
+        else setSaldo(150f);
+        setStatus(true);
     }
     public void fecharConta(){
         status = false;
     }
     public void depositar(float deposito){
-        setSaldo(this.saldo + deposito);
+        setSaldo(+deposito);
     }
     public void sacar(float saque){
-        setSaldo(this.saldo-saque);
+        setSaldo(-saque);
     }
     public void pagarMensalidade(){
-        if (this.tipo=="cc"){
-            setSaldo(this.saldo-12f);
+        if (getTipo()=="cc"){
+            setSaldo(-12f);
         } else {
-            setSaldo(this.saldo-20);
+            setSaldo(-20);
         }
     }
 
