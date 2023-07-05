@@ -6,6 +6,7 @@ public class Aluno extends Pessoa{
     public void cancelarMatricula(){
         System.out.println("matricula cancelada");
     }
+    public void pagarMensalidade(){}
 
     public int getMatricula() {
         return matricula;
