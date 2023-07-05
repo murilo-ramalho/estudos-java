@@ -80,9 +80,9 @@ public class Lutador {
     }
 
     private void setCategoria(float peso) {
-        if (peso>52.2 && peso<=70.3) this.categoria = "leve";
-        else if (peso<=83.9) this.categoria = "medio";
-        else if (peso<=120.2) this.categoria = "pesado";
+        if (peso>52.2 && peso<=70.3) this.categoria = "LEVE";
+        else if (peso<=83.9) this.categoria = "MEDIO";
+        else if (peso<=120.2) this.categoria = "PESADO";
         else this.categoria = "invalido";
     }
 
