@@ -1,6 +1,4 @@
-package interfaces;
-
-import java.util.Scanner;
+package interfaces_encapsulamento;
 
 public class Main {
     public static void main(String[] args){

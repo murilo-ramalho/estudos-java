@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces_encapsulamento;
 
 public interface Controlador {
     public abstract void ligar();

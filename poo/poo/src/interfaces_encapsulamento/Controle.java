@@ -1,4 +1,4 @@
-package interfaces;
+package interfaces_encapsulamento;
 
 public class Controle implements Controlador{
     private int volume;
