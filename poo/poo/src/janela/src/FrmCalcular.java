@@ -19,7 +19,7 @@ public class FrmCalcular {
         btnEnviar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Double soma, multiplicacao,subtracao,divisao;
+                double soma, multiplicacao,subtracao,divisao;
                 Double num1 = Double.valueOf(txtNum1.getText());
                 Double num2 = Double.valueOf(txtNum2.getText());
 
