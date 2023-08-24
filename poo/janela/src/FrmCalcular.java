@@ -1,6 +1,5 @@
-package janela.src;
-
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,12 +13,13 @@ public class FrmCalcular {
     private JLabel lblSub;
     private JLabel lblDiv;
 
+
     public FrmCalcular(){
         //panel = new JPanel();
         btnEnviar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                double soma, multiplicacao,subtracao,divisao;
+                Double soma, multiplicacao,subtracao,divisao;
                 Double num1 = Double.valueOf(txtNum1.getText());
                 Double num2 = Double.valueOf(txtNum2.getText());
 
